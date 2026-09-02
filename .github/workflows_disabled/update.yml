@@ -1,0 +1,171 @@
+# 自動更新（段階1）: FIS サイトから新しいモーグル単走リザルト PDF を探し、ETL と多層照合を回す。
+# 全部緑なら Pull Request、赤なら Issue を作る。公開（PR のマージ）は人が行う。
+# 仕組みの説明は docs/自動更新の仕組み.md を参照。
+name: 新しいリザルトの自動取得
+
+on:
+  # 定期実行は FIS サイトの利用条件（自動取得の可否）を確認するまで無効にしている。確認後に下の 2 行のコメントを外す。
+  # schedule:
+  #   - cron: "0 6 * 11,12,1,2,3 *"   # 毎日 06:00 UTC（日本時間 15:00）、シーズン中の 11〜3 月だけ
+  workflow_dispatch:
+    # 手動実行。季節外や過去シーズンの取り直しに使う
+    inputs:
+      season:
+        description: "seasoncode（2025-26 シーズンなら 2026）。空なら今日の日付から自動判定"
+        required: false
+        default: ""
+      categories:
+        description: "対象区分（カンマ区切り）"
+        required: false
+        default: "WC,WSC,OWG"
+
+# PR と Issue を作るための権限
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+# 同時に 2 本走らないようにする
+concurrency:
+  group: update-results
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. リポジトリを取得
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      # 2. Python 3.12
+      - name: Python 3.12 を用意
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # 3. 依存は pdfplumber だけ（fis_fetch は標準ライブラリのみ）
+      - name: 依存をインストール
+        run: pip install pdfplumber
+
+      # 4. 対象シーズンを決める（7 月以降は翌年が seasoncode。例: 2025-12-01 -> 2026）
+      - name: 対象シーズンを決める
+        id: season
+        run: |
+          if [ -n "${{ github.event.inputs.season }}" ]; then
+            SEASON="${{ github.event.inputs.season }}"
+          else
+            SEASON=$(python -c "import datetime as d; t=d.date.today(); print(t.year+1 if t.month>=7 else t.year)")
+          fi
+          CATS="${{ github.event.inputs.categories }}"
+          [ -z "$CATS" ] && CATS="WC,WSC,OWG"
+          echo "season=$SEASON" >> "$GITHUB_OUTPUT"
+          echo "categories=$CATS" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+          echo "season=$SEASON categories=$CATS"
+
+      # 5. FIS のカレンダー -> 大会詳細 -> 添付 PDF をたどり、source_pdfs/ に無いものを取得する
+      #    （リクエスト間は 1.5 秒空ける。取得結果は fetch_report.json に残す）
+      - name: FIS から新しいリザルト PDF を探して取得
+        id: fetch
+        run: |
+          set -o pipefail
+          mkdir -p .fetch source_pdfs
+          python -m etl.fis_fetch \
+            --season "${{ steps.season.outputs.season }}" \
+            --category "${{ steps.season.outputs.categories }}" \
+            --check-new --download \
+            --pdf-root source_pdfs \
+            --report .fetch/fetch_report.json 2>&1 | tee .fetch/fetch_log.txt
+        # .fetch/ は作業用。PR には含めない（下で除外）
+
+      # 6. 新しい PDF が無ければここで終了
+      - name: 取得数を数える
+        id: count
+        run: |
+          python - <<'EOF' >> "$GITHUB_OUTPUT"
+          import json
+          reps = json.load(open(".fetch/fetch_report.json", encoding="utf-8"))
+          dl = [d for r in reps for d in r["downloaded"]]
+          errs = [e for r in reps for e in r["errors"]]
+          print(f"new={len(dl)}")
+          print(f"errors={len(errs)}")
+          with open(".fetch/new_files.md", "w", encoding="utf-8") as f:
+              for d in dl:
+                  f.write(f"- `{d['dest']}` ({d['date']} {d['venue']} {d['gender']} {d['round']}) sha256 `{d['sha256'][:12]}…`\n")
+              for e in errs:
+                  f.write(f"- 取得エラー: {e}\n")
+          EOF
+
+      # 7. ETL（読み取り A/B、多層照合、公開ゲート）。失敗しても次のステップで Issue にするので止めない
+      #    etl.build は「全部緑なら終了コード 0、赤があれば 0 以外」で、docs/検証レポート.md を書く前提
+      - name: ETL と多層照合を実行
+        id: build
+        if: steps.count.outputs.new != '0'
+        continue-on-error: true
+        run: python -m etl.build 2>&1 | tee .fetch/build_log.txt
+
+      # 8. Issue / PR の本文を作る
+      - name: 報告文を作る
+        if: steps.count.outputs.new != '0'
+        run: |
+          {
+            echo "## 取得した PDF（${{ steps.season.outputs.date }}）"
+            cat .fetch/new_files.md
+            echo
+            if [ -f docs/検証レポート.md ]; then
+              echo "## 検証レポート"
+              cat docs/検証レポート.md
+            else
+              echo "## ETL ログ（検証レポートが生成されていません）"
+              echo '```'
+              tail -n 200 .fetch/build_log.txt 2>/dev/null || echo "(ログなし)"
+              echo '```'
+            fi
+          } > .fetch/body.md
+
+      # 9a. 全部緑 -> Pull Request（人がマージすると公開される）
+      - name: Pull Request を作る
+        if: steps.count.outputs.new != '0' && steps.build.outcome == 'success'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: auto/results-${{ steps.season.outputs.date }}
+          commit-message: "新しいリザルト ${{ steps.season.outputs.date }}"
+          title: "新しいリザルト ${{ steps.season.outputs.date }}"
+          body-path: .fetch/body.md
+          labels: auto-update
+          add-paths: |
+            source_pdfs/**
+            data/**
+            docs/検証レポート.md
+            etl/published_hashes.json
+            etl/expected_rounds.json
+          delete-branch: true
+
+      # 9b. 赤がある -> Issue（PR は作らない。人が検証レポートを読んで対処する）
+      - name: Issue を作る
+        if: steps.count.outputs.new != '0' && steps.build.outcome != 'success'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "検証に失敗したリザルト ${{ steps.season.outputs.date }}"
+          content-filepath: .fetch/body.md
+          labels: auto-update, needs-review
+
+      # 10. 新しい PDF は無いが取得エラーがあった場合も Issue で知らせる（FIS への到達性の問題など）
+      - name: 取得エラーを Issue にする
+        if: steps.count.outputs.new == '0' && steps.count.outputs.errors != '0'
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: "FIS からの取得でエラー ${{ steps.season.outputs.date }}"
+          content-filepath: .fetch/new_files.md
+          labels: auto-update, needs-review
+
+      # 11. ログを 2 週間だけ保存（デバッグ用）
+      - name: ログを保存
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fetch-logs-${{ steps.season.outputs.date }}
+          path: .fetch/
+          retention-days: 14
+          if-no-files-found: ignore

@@ -1,0 +1,13 @@
+{
+  "_comment": "2026-27 シーズンのモーグル単走の予定。FIS カレンダー（moguls-aerials, seasoncode=2027, WC / WSC）を 2026-09-03 にブラウザで確認して転記。大会後に PDF を手で保存し ETL を回す運用の基準表。codex は大会が近づいてから FIS の大会ページで確認する。",
+  "season": "2026-27",
+  "events": [
+    {"series": "WC",  "venue": "Ruka",              "nation": "FIN", "date_from": "2026-12-12", "date_to": "2026-12-12", "events": "2xMO",           "folder": "2026-27シーズン/Ruka",              "download_after": "2026-12-13"},
+    {"series": "WC",  "venue": "Val St. Come",      "nation": "CAN", "date_from": "2027-01-15", "date_to": "2027-01-16", "events": "2xMO 2xDM",      "folder": "2026-27シーズン/Val St. Come",      "download_after": "2027-01-17"},
+    {"series": "WC",  "venue": "Waterville Valley", "nation": "USA", "date_from": "2027-01-22", "date_to": "2027-01-23", "events": "2xMO 2xDM",      "folder": "2026-27シーズン/Waterville",        "download_after": "2027-01-24"},
+    {"series": "WC",  "venue": "Deer Valley",       "nation": "USA", "date_from": "2027-01-28", "date_to": "2027-01-30", "events": "2xMO 2xAE 2xDM", "folder": "2026-27シーズン/Deer Valley",       "download_after": "2027-01-31"},
+    {"series": "WC",  "venue": "Almaty",            "nation": "KAZ", "date_from": "2027-02-19", "date_to": "2027-02-21", "events": "2xMO 2xDM 2xAE", "folder": "2026-27シーズン/Almaty",            "download_after": "2027-02-22"},
+    {"series": "WC",  "venue": "Shahdag",           "nation": "AZE", "date_from": "2027-03-05", "date_to": "2027-03-07", "events": "2xMO 2xDM 2xAE", "folder": "2026-27シーズン/Shahdag",           "download_after": "2027-03-08"},
+    {"series": "WSC", "venue": "Montafon",          "nation": "AUT", "date_from": "2027-03-06", "date_to": "2027-03-21", "events": "4xMO 2xDM (World Championships, 選手権形式: Q1/Q2/F1/F2)", "folder": "世界選手権/Montafon", "download_after": "2027-03-22", "note": "モーグルの実施日は大会が近づいてから FIS の大会ページで確認"}
+  ]
+}

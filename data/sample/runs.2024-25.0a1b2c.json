@@ -1,0 +1,901 @@
+[
+ {
+  "run_id": "2024-25-8105-Q1-2484937",
+  "round_id": "2024-25-8105-Q1",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "Q1",
+  "rank": 1,
+  "bib": 2,
+  "fis_code": "2484937",
+  "athlete_id": "2484937",
+  "name": "KINGSBURY Mikael",
+  "noc": "CAN",
+  "yb": 1992,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 20.75,
+  "time_points": 15.41,
+  "air": [
+   {
+    "J6": 8.4,
+    "J7": 8.5,
+    "jump": "bdF",
+    "dd": 1.05,
+    "v6": 8.82,
+    "v7": 8.92,
+    "jump_score": 8.87
+   },
+   {
+    "J6": 8.2,
+    "J7": 8.0,
+    "jump": "7oG",
+    "dd": 1.01,
+    "v6": 8.28,
+    "v7": 8.08,
+    "jump_score": 8.18
+   }
+  ],
+  "air_total": 17.04,
+  "base": [
+   17.5,
+   17.7,
+   17.2,
+   18.0,
+   17.4
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 52.6,
+  "ded": [
+   -0.8,
+   -0.6,
+   -1.1,
+   -1.2,
+   -0.7
+  ],
+  "ded_discard": [
+   1,
+   3
+  ],
+  "ded_total": -2.6,
+  "turns_total": 50.0,
+  "turns_floor_applied": false,
+  "run_score": 82.45,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-Q1-2529411",
+  "round_id": "2024-25-8105-Q1",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "Q1",
+  "rank": 2,
+  "bib": 5,
+  "fis_code": "2529411",
+  "athlete_id": "2529411",
+  "name": "HORISHIMA Ikuma",
+  "noc": "JPN",
+  "yb": 1997,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 21.02,
+  "time_points": 14.99,
+  "air": [
+   {
+    "J6": 8.0,
+    "J7": 8.2,
+    "jump": "bF",
+    "dd": 0.88,
+    "v6": 7.04,
+    "v7": 7.21,
+    "jump_score": 7.125
+   },
+   {
+    "J6": 8.5,
+    "J7": 8.3,
+    "jump": "10op",
+    "dd": 1.05,
+    "v6": 8.92,
+    "v7": 8.71,
+    "jump_score": 8.815
+   }
+  ],
+  "air_total": 15.94,
+  "base": [
+   17.0,
+   17.2,
+   16.8,
+   17.6,
+   17.1
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 51.3,
+  "ded": [
+   -1.0,
+   -0.9,
+   -1.3,
+   -1.5,
+   -0.8
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -3.2,
+  "turns_total": 48.1,
+  "turns_floor_applied": false,
+  "run_score": 79.03,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-Q1-2532001",
+  "round_id": "2024-25-8105-Q1",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "Q1",
+  "rank": 3,
+  "bib": 9,
+  "fis_code": "2532001",
+  "athlete_id": "2532001",
+  "name": "WALLBERG Walter",
+  "noc": "SWE",
+  "yb": 2000,
+  "status": "OK",
+  "reserve_judge": true,
+  "seconds": 21.4,
+  "time_points": 14.39,
+  "air": [
+   {
+    "J6": 7.8,
+    "J7": 7.9,
+    "jump": "bG",
+    "dd": 0.82,
+    "v6": 6.39,
+    "v7": 6.47,
+    "jump_score": 6.43
+   },
+   {
+    "J6": 7.6,
+    "J7": 7.5,
+    "jump": "7op",
+    "dd": 0.88,
+    "v6": 6.68,
+    "v7": 6.6,
+    "jump_score": 6.64
+   }
+  ],
+  "air_total": 13.07,
+  "base": [
+   16.6,
+   16.9,
+   16.2,
+   17.0,
+   16.5
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 50.0,
+  "ded": [
+   -1.4,
+   -1.2,
+   -1.6,
+   -1.9,
+   -1.1
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -4.2,
+  "turns_total": 45.8,
+  "turns_floor_applied": false,
+  "run_score": 73.25,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-Q1-2530045",
+  "round_id": "2024-25-8105-Q1",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "Q1",
+  "rank": 4,
+  "bib": 14,
+  "fis_code": "2530045",
+  "athlete_id": "2530045",
+  "name": "ELOFSSON Filip",
+  "noc": "SWE",
+  "yb": 1999,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 21.88,
+  "time_points": 13.64,
+  "air": [
+   {
+    "J6": 7.2,
+    "J7": 7.4,
+    "jump": "bF",
+    "dd": 0.88,
+    "v6": 6.33,
+    "v7": 6.51,
+    "jump_score": 6.42
+   },
+   {
+    "J6": 7.0,
+    "J7": 7.1,
+    "jump": "7op",
+    "dd": 0.88,
+    "v6": 6.16,
+    "v7": 6.24,
+    "jump_score": 6.2
+   }
+  ],
+  "air_total": 12.62,
+  "base": [
+   15.8,
+   16.1,
+   15.4,
+   16.3,
+   15.7
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 47.6,
+  "ded": [
+   -1.8,
+   -1.6,
+   -2.1,
+   -2.4,
+   -1.5
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -5.5,
+  "turns_total": 42.1,
+  "turns_floor_applied": false,
+  "run_score": 68.36,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-Q1-2531234",
+  "round_id": "2024-25-8105-Q1",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "Q1",
+  "rank": null,
+  "bib": 21,
+  "fis_code": "2531234",
+  "athlete_id": "2531234",
+  "name": "MATSUDA Sou",
+  "noc": "JPN",
+  "yb": 2003,
+  "status": "DNF",
+  "reserve_judge": false,
+  "seconds": null,
+  "time_points": null,
+  "air": [],
+  "air_total": null,
+  "base": [],
+  "base_discard": [],
+  "base_total": null,
+  "ded": [],
+  "ded_discard": [],
+  "ded_total": null,
+  "turns_total": null,
+  "turns_floor_applied": false,
+  "run_score": null,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-F2-2484937",
+  "round_id": "2024-25-8105-F2",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "F2",
+  "rank": 1,
+  "bib": 2,
+  "fis_code": "2484937",
+  "athlete_id": "2484937",
+  "name": "KINGSBURY Mikael",
+  "noc": "CAN",
+  "yb": 1992,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 20.51,
+  "time_points": 15.79,
+  "air": [
+   {
+    "J6": 8.6,
+    "J7": 8.8,
+    "jump": "bdF",
+    "dd": 1.05,
+    "v6": 9.03,
+    "v7": 9.24,
+    "jump_score": 9.135
+   },
+   {
+    "J6": 7.9,
+    "J7": 7.6,
+    "jump": "7oG",
+    "dd": 1.01,
+    "v6": 7.97,
+    "v7": 7.67,
+    "jump_score": 7.82
+   }
+  ],
+  "air_total": 16.95,
+  "base": [
+   17.8,
+   18.0,
+   17.4,
+   18.4,
+   17.5
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 53.3,
+  "ded": [
+   -0.7,
+   -0.6,
+   -1.0,
+   -1.4,
+   -0.5
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -2.3,
+  "turns_total": 51.0,
+  "turns_floor_applied": false,
+  "run_score": 83.74,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル決勝2_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-F2-2529411",
+  "round_id": "2024-25-8105-F2",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "F2",
+  "rank": 2,
+  "bib": 5,
+  "fis_code": "2529411",
+  "athlete_id": "2529411",
+  "name": "HORISHIMA Ikuma",
+  "noc": "JPN",
+  "yb": 1997,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 20.66,
+  "time_points": 15.56,
+  "air": [
+   {
+    "J6": 8.3,
+    "J7": 8.4,
+    "jump": "bF",
+    "dd": 0.88,
+    "v6": 7.3,
+    "v7": 7.39,
+    "jump_score": 7.345
+   },
+   {
+    "J6": 8.6,
+    "J7": 8.7,
+    "jump": "10op",
+    "dd": 1.05,
+    "v6": 9.03,
+    "v7": 9.13,
+    "jump_score": 9.08
+   }
+  ],
+  "air_total": 16.42,
+  "base": [
+   17.4,
+   17.6,
+   17.1,
+   17.9,
+   17.3
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 52.3,
+  "ded": [
+   -0.9,
+   -0.8,
+   -1.2,
+   -1.3,
+   -0.7
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -2.9,
+  "turns_total": 49.4,
+  "turns_floor_applied": false,
+  "run_score": 81.38,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル決勝2_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8105-F2-2532001",
+  "round_id": "2024-25-8105-F2",
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "gender": "M",
+  "round": "F2",
+  "rank": 3,
+  "bib": 9,
+  "fis_code": "2532001",
+  "athlete_id": "2532001",
+  "name": "WALLBERG Walter",
+  "noc": "SWE",
+  "yb": 2000,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 21.1,
+  "time_points": 14.86,
+  "air": [
+   {
+    "J6": 8.0,
+    "J7": 8.1,
+    "jump": "bG",
+    "dd": 0.82,
+    "v6": 6.56,
+    "v7": 6.64,
+    "jump_score": 6.6
+   },
+   {
+    "J6": 7.9,
+    "J7": 7.8,
+    "jump": "7op",
+    "dd": 0.88,
+    "v6": 6.95,
+    "v7": 6.86,
+    "jump_score": 6.905
+   }
+  ],
+  "air_total": 13.5,
+  "base": [
+   16.9,
+   17.1,
+   16.5,
+   17.3,
+   16.8
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 50.8,
+  "ded": [
+   -1.2,
+   -1.1,
+   -1.5,
+   -1.7,
+   -1.0
+  ],
+  "ded_discard": [
+   3,
+   4
+  ],
+  "ded_total": -3.8,
+  "turns_total": 47.0,
+  "turns_floor_applied": false,
+  "run_score": 75.36,
+  "tie": null,
+  "q_block": null,
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル決勝2_8105.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8210-Q2-2530270",
+  "round_id": "2024-25-8210-Q2",
+  "event_id": "2024-25-engadin-8210",
+  "season": "2024-25",
+  "series": "WSC",
+  "gender": "W",
+  "round": "Q2",
+  "rank": 1,
+  "bib": 3,
+  "fis_code": "2530270",
+  "athlete_id": "2530270",
+  "name": "KAWAMURA Anri",
+  "noc": "JPN",
+  "yb": 2004,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 24.05,
+  "time_points": 15.01,
+  "air": [
+   {
+    "J6": 8.1,
+    "J7": 8.3,
+    "jump": "bF",
+    "dd": 0.98,
+    "v6": 7.93,
+    "v7": 8.13,
+    "jump_score": 8.03
+   },
+   {
+    "J6": 8.0,
+    "J7": 7.8,
+    "jump": "7oG",
+    "dd": 1.11,
+    "v6": 8.88,
+    "v7": 8.65,
+    "jump_score": 8.765
+   }
+  ],
+  "air_total": 16.79,
+  "base": [
+   16.9,
+   17.2,
+   16.6,
+   17.4,
+   17.0
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 51.1,
+  "ded": [
+   -1.0,
+   -0.8,
+   -1.3,
+   -1.4,
+   -0.9
+  ],
+  "ded_discard": [
+   1,
+   3
+  ],
+  "ded_total": -3.2,
+  "turns_total": 47.9,
+  "turns_floor_applied": false,
+  "run_score": 79.69,
+  "tie": null,
+  "q_block": "Q2",
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Engadin/Engadin_女子モーグル予選_8210.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8210-Q2-2530270-Q1ref",
+  "round_id": "2024-25-8210-Q2",
+  "event_id": "2024-25-engadin-8210",
+  "season": "2024-25",
+  "series": "WSC",
+  "gender": "W",
+  "round": "Q2",
+  "rank": 1,
+  "bib": 3,
+  "fis_code": "2530270",
+  "athlete_id": "2530270",
+  "name": "KAWAMURA Anri",
+  "noc": "JPN",
+  "yb": 2004,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 24.4,
+  "time_points": 14.53,
+  "air": [
+   {
+    "J6": 7.8,
+    "J7": 7.9,
+    "jump": "bF",
+    "dd": 0.98,
+    "v6": 7.64,
+    "v7": 7.74,
+    "jump_score": 7.69
+   },
+   {
+    "J6": 7.5,
+    "J7": 7.6,
+    "jump": "7oG",
+    "dd": 1.11,
+    "v6": 8.32,
+    "v7": 8.43,
+    "jump_score": 8.375
+   }
+  ],
+  "air_total": 16.06,
+  "base": [
+   16.4,
+   16.7,
+   16.1,
+   16.9,
+   16.5
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 49.6,
+  "ded": [
+   -1.3,
+   -1.1,
+   -1.6,
+   -1.8,
+   -1.2
+  ],
+  "ded_discard": [
+   1,
+   3
+  ],
+  "ded_total": -4.1,
+  "turns_total": 45.5,
+  "turns_floor_applied": false,
+  "run_score": 76.09,
+  "tie": null,
+  "q_block": "Q1",
+  "counting": false,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Engadin/Engadin_女子モーグル予選_8210.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8210-Q2-2485003",
+  "round_id": "2024-25-8210-Q2",
+  "event_id": "2024-25-engadin-8210",
+  "season": "2024-25",
+  "series": "WSC",
+  "gender": "W",
+  "round": "Q2",
+  "rank": 2,
+  "bib": 7,
+  "fis_code": "2485003",
+  "athlete_id": "2485003",
+  "name": "LAFFONT Perrine",
+  "noc": "FRA",
+  "yb": 1998,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 24.62,
+  "time_points": 14.23,
+  "air": [
+   {
+    "J6": 7.6,
+    "J7": 7.7,
+    "jump": "bG",
+    "dd": 0.92,
+    "v6": 6.99,
+    "v7": 7.08,
+    "jump_score": 7.035
+   },
+   {
+    "J6": 7.4,
+    "J7": 7.3,
+    "jump": "7op",
+    "dd": 0.98,
+    "v6": 7.25,
+    "v7": 7.15,
+    "jump_score": 7.2
+   }
+  ],
+  "air_total": 14.23,
+  "base": [
+   16.2,
+   16.5,
+   15.9,
+   16.8,
+   16.3
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 49.0,
+  "ded": [
+   -1.5,
+   -1.3,
+   -1.8,
+   -2.0,
+   -1.4
+  ],
+  "ded_discard": [
+   1,
+   3
+  ],
+  "ded_total": -4.7,
+  "turns_total": 44.3,
+  "turns_floor_applied": false,
+  "run_score": 72.75,
+  "tie": null,
+  "q_block": "Q2",
+  "counting": false,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Engadin/Engadin_女子モーグル予選_8210.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ },
+ {
+  "run_id": "2024-25-8210-Q2-2485003-Q1ref",
+  "round_id": "2024-25-8210-Q2",
+  "event_id": "2024-25-engadin-8210",
+  "season": "2024-25",
+  "series": "WSC",
+  "gender": "W",
+  "round": "Q2",
+  "rank": 2,
+  "bib": 7,
+  "fis_code": "2485003",
+  "athlete_id": "2485003",
+  "name": "LAFFONT Perrine",
+  "noc": "FRA",
+  "yb": 1998,
+  "status": "OK",
+  "reserve_judge": false,
+  "seconds": 24.2,
+  "time_points": 14.8,
+  "air": [
+   {
+    "J6": 7.9,
+    "J7": 8.0,
+    "jump": "bG",
+    "dd": 0.92,
+    "v6": 7.26,
+    "v7": 7.36,
+    "jump_score": 7.31
+   },
+   {
+    "J6": 7.7,
+    "J7": 7.8,
+    "jump": "7op",
+    "dd": 0.98,
+    "v6": 7.54,
+    "v7": 7.64,
+    "jump_score": 7.59
+   }
+  ],
+  "air_total": 14.89,
+  "base": [
+   16.6,
+   16.8,
+   16.3,
+   17.1,
+   16.7
+  ],
+  "base_discard": [
+   2,
+   3
+  ],
+  "base_total": 50.1,
+  "ded": [
+   -1.2,
+   -1.0,
+   -1.5,
+   -1.7,
+   -1.1
+  ],
+  "ded_discard": [
+   1,
+   3
+  ],
+  "ded_total": -3.8,
+  "turns_total": 46.3,
+  "turns_floor_applied": false,
+  "run_score": 75.99,
+  "tie": null,
+  "q_block": "Q1",
+  "counting": true,
+  "components": null,
+  "provenance": {
+   "pdf": "2024-25シーズン/Engadin/Engadin_女子モーグル予選_8210.pdf",
+   "page": 1,
+   "parser_version": "0.1.0-sample",
+   "rules_version": "2024-25"
+  }
+ }
+]

@@ -1,0 +1,95 @@
+[
+ {
+  "round_id": "2024-25-8105-Q1",
+  "winner": {
+   "run_id": "2024-25-8105-Q1-2484937",
+   "rank": 1,
+   "fis_code": "2484937",
+   "name": "KINGSBURY Mikael",
+   "noc": "CAN",
+   "run_score": 82.45,
+   "time_points": 15.41,
+   "air_total": 17.04,
+   "turns_total": 50.0,
+   "base_total": 52.6,
+   "ded_total": -2.6,
+   "seconds": 20.75
+  },
+  "cut": {
+   "rank": 4,
+   "label": "F1 進出ライン（4位）",
+   "to": "F1",
+   "run": {
+    "run_id": "2024-25-8105-Q1-2530045",
+    "rank": 4,
+    "fis_code": "2530045",
+    "name": "ELOFSSON Filip",
+    "noc": "SWE",
+    "run_score": 68.36,
+    "time_points": 13.64,
+    "air_total": 12.62,
+    "turns_total": 42.1,
+    "base_total": 47.6,
+    "ded_total": -5.5,
+    "seconds": 21.88
+   }
+  },
+  "n_ok": 4
+ },
+ {
+  "round_id": "2024-25-8105-F2",
+  "winner": {
+   "run_id": "2024-25-8105-F2-2484937",
+   "rank": 1,
+   "fis_code": "2484937",
+   "name": "KINGSBURY Mikael",
+   "noc": "CAN",
+   "run_score": 83.74,
+   "time_points": 15.79,
+   "air_total": 16.95,
+   "turns_total": 51.0,
+   "base_total": 53.3,
+   "ded_total": -2.3,
+   "seconds": 20.51
+  },
+  "cut": null,
+  "n_ok": 3
+ },
+ {
+  "round_id": "2024-25-8210-Q2",
+  "winner": {
+   "run_id": "2024-25-8210-Q2-2530270",
+   "rank": 1,
+   "fis_code": "2530270",
+   "name": "KAWAMURA Anri",
+   "noc": "JPN",
+   "run_score": 79.69,
+   "time_points": 15.01,
+   "air_total": 16.79,
+   "turns_total": 47.9,
+   "base_total": 51.1,
+   "ded_total": -3.2,
+   "seconds": 24.05
+  },
+  "cut": {
+   "rank": 2,
+   "label": "F1 進出ライン（2位）",
+   "to": "F1",
+   "run": {
+    "run_id": "2024-25-8210-Q2-2485003-Q1ref",
+    "rank": 2,
+    "fis_code": "2485003",
+    "name": "LAFFONT Perrine",
+    "noc": "FRA",
+    "run_score": 75.99,
+    "time_points": 14.8,
+    "air_total": 14.89,
+    "turns_total": 46.3,
+    "base_total": 50.1,
+    "ded_total": -3.8,
+    "seconds": 24.2
+   }
+  },
+  "n_ok": 2
+ }
+]

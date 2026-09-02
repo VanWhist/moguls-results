@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="モーグルDB">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<!-- 検索エンジンにインデックスさせない（robots.txt と対で効かせる）。
+     元データは FIS の PDF で氏名検索に引っかかりにくいが、このサイトは HTML なので
+     そのままだと選手名・審判名が検索結果に出る。URL を知っていれば見られる状態は変わらない。 -->
+<meta name="robots" content="noindex,nofollow">
+<title>リザルト | モーグル リザルトデータベース</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="app">
+  <!-- 入口は検索。いきなり全ランの表は出さない -->
+  <div class="card hero">
+    <label class="hero-search">
+      <span class="hero-label">選手・大会をさがす</span>
+      <input type="search" id="q" autocomplete="off"
+             placeholder="選手名・大会名を検索　例：HORISHIMA、堀島、Ruka">
+    </label>
+    <div id="suggest" class="suggest" hidden></div>
+    <div class="hero-actions">
+      <button class="chip" id="toggle-filters" aria-expanded="false">詳しく絞り込む ▼</button>
+      <button class="chip" id="reset" hidden>条件をクリア</button>
+    </div>
+    <div class="controls" id="filters" hidden>
+      <label>シーズン<select id="f-season"></select></label>
+      <label>大会種別<select id="f-series"></select></label>
+      <label>男女<select id="f-gender"></select></label>
+    </div>
+    <div id="note-slot"></div>
+  </div>
+
+  <!-- 初期表示：最近の大会。ここから入る -->
+  <div class="card" id="recent-card">
+    <h2 id="recent-title">最近の大会</h2>
+    <p class="meta">大会のラウンドを選ぶと、そのラウンドの結果表を表示します。</p>
+    <div id="recent" class="meet-grid"></div>
+  </div>
+
+  <div class="card" id="results-card" hidden>
+    <p class="meta"><button class="link-button" id="back-to-list">← 大会一覧に戻る</button></p>
+    <div id="event-head"></div>
+    <div id="round-chips" class="round-chips"></div>
+    <div id="round-head"></div>
+    <div class="results-head">
+      <!-- 結果表の見た目。FIS の公式リザルト PDF と同じ並び（既定）か、1ラン1行の表か。
+           選択は localStorage に覚える。狭い画面ではカード表示になるので出さない -->
+      <div class="view-toggle" id="view-toggle" role="group" aria-label="表示形式">
+        <button class="chip" type="button" data-view="fis" aria-pressed="true">FIS形式</button>
+        <button class="chip" type="button" data-view="table" aria-pressed="false">表形式</button>
+      </div>
+      <div class="pager" id="pager-top"></div>
+    </div>
+    <div id="results"></div>
+    <div class="pager pager-bottom" id="pager-bottom"></div>
+  </div>
+</main>
+<script type="module" src="js/index.js"></script>
+</body>
+</html>

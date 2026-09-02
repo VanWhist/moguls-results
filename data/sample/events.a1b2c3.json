@@ -1,0 +1,314 @@
+[
+ {
+  "event_id": "2024-25-ruka-8105",
+  "season": "2024-25",
+  "series": "WC",
+  "venue": "RUKA (FIN)",
+  "nation": "FIN",
+  "format": "wc_traditional",
+  "rounds": [
+   {
+    "round_id": "2024-25-8105-Q1",
+    "codex": "8105",
+    "gender": "M",
+    "round": "Q1",
+    "date": "2024-11-30",
+    "start_time": "10:00",
+    "n_competitors": 5,
+    "pace_time": 20.38,
+    "course": {
+     "name": "Battery Run",
+     "length_m": 210,
+     "width_m": 18.0,
+     "gate_width_m": 10.0,
+     "gradient_deg": 27
+    },
+    "judges": [
+     {
+      "no": 1,
+      "role": "Turns",
+      "judge_id": "j-orsatti-alberto",
+      "name": "ORSATTI Alberto",
+      "noc": "ITA"
+     },
+     {
+      "no": 2,
+      "role": "Turns",
+      "judge_id": "j-smith-john",
+      "name": "SMITH John",
+      "noc": "USA"
+     },
+     {
+      "no": 3,
+      "role": "Turns",
+      "judge_id": "j-tanaka-hiroshi",
+      "name": "TANAKA Hiroshi",
+      "noc": "JPN"
+     },
+     {
+      "no": 4,
+      "role": "Turns",
+      "judge_id": "j-mueller-hans",
+      "name": "MUELLER Hans",
+      "noc": "GER"
+     },
+     {
+      "no": 5,
+      "role": "Turns",
+      "judge_id": "j-dubois-marie",
+      "name": "DUBOIS Marie",
+      "noc": "FRA"
+     },
+     {
+      "no": 6,
+      "role": "Air",
+      "judge_id": "j-kowalski-piotr",
+      "name": "KOWALSKI Piotr",
+      "noc": "POL"
+     },
+     {
+      "no": 7,
+      "role": "Air",
+      "judge_id": "j-berg-anna",
+      "name": "BERG Anna",
+      "noc": "SWE"
+     }
+    ],
+    "officials": [
+     {
+      "role": "Head Judge",
+      "name": "PETERSEN Lars",
+      "noc": "NOR"
+     },
+     {
+      "role": "Chief of Competition",
+      "name": "KOSKINEN Matti",
+      "noc": "FIN"
+     }
+    ],
+    "source": {
+     "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル予選_8105.pdf",
+     "pdf_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+     "fis_url": "https://medias4.fis-ski.com/pdf/2025/MO/8105/2025MO8105.pdf",
+     "report_created": "SAT 30 NOV 2024 11:32",
+     "imported_at": "2026-09-03T05:00:00",
+     "parser_version": "0.1.0-sample",
+     "rules_version": "2024-25"
+    },
+    "verification": {
+     "layer0": "ok",
+     "layer1": "ok",
+     "layer2": "ok",
+     "layer3": "ok",
+     "layer4": "ok",
+     "layer5": "skipped"
+    }
+   },
+   {
+    "round_id": "2024-25-8105-F2",
+    "codex": "8105",
+    "gender": "M",
+    "round": "F2",
+    "date": "2024-11-30",
+    "start_time": "16:48",
+    "n_competitors": 6,
+    "pace_time": 20.38,
+    "course": {
+     "name": "Battery Run",
+     "length_m": 210,
+     "width_m": 18.0,
+     "gate_width_m": 10.0,
+     "gradient_deg": 27
+    },
+    "judges": [
+     {
+      "no": 1,
+      "role": "Turns",
+      "judge_id": "j-orsatti-alberto",
+      "name": "ORSATTI Alberto",
+      "noc": "ITA"
+     },
+     {
+      "no": 2,
+      "role": "Turns",
+      "judge_id": "j-smith-john",
+      "name": "SMITH John",
+      "noc": "USA"
+     },
+     {
+      "no": 3,
+      "role": "Turns",
+      "judge_id": "j-tanaka-hiroshi",
+      "name": "TANAKA Hiroshi",
+      "noc": "JPN"
+     },
+     {
+      "no": 4,
+      "role": "Turns",
+      "judge_id": "j-mueller-hans",
+      "name": "MUELLER Hans",
+      "noc": "GER"
+     },
+     {
+      "no": 5,
+      "role": "Turns",
+      "judge_id": "j-dubois-marie",
+      "name": "DUBOIS Marie",
+      "noc": "FRA"
+     },
+     {
+      "no": 6,
+      "role": "Air",
+      "judge_id": "j-kowalski-piotr",
+      "name": "KOWALSKI Piotr",
+      "noc": "POL"
+     },
+     {
+      "no": 7,
+      "role": "Air",
+      "judge_id": "j-berg-anna",
+      "name": "BERG Anna",
+      "noc": "SWE"
+     }
+    ],
+    "officials": [
+     {
+      "role": "Head Judge",
+      "name": "PETERSEN Lars",
+      "noc": "NOR"
+     },
+     {
+      "role": "Chief of Competition",
+      "name": "KOSKINEN Matti",
+      "noc": "FIN"
+     }
+    ],
+    "source": {
+     "pdf": "2024-25シーズン/Ruka/Ruka_男子モーグル決勝2_8105.pdf",
+     "pdf_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+     "fis_url": null,
+     "report_created": "SAT 30 NOV 2024 17:18",
+     "imported_at": "2026-09-03T05:00:00",
+     "parser_version": "0.1.0-sample",
+     "rules_version": "2024-25"
+    },
+    "verification": {
+     "layer0": "ok",
+     "layer1": "ok",
+     "layer2": "ok",
+     "layer3": "ok",
+     "layer4": "ok",
+     "layer5": "ok"
+    }
+   }
+  ],
+  "date_from": "2024-11-30",
+  "date_to": "2024-11-30",
+  "format_label": "W杯（通常形式）"
+ },
+ {
+  "event_id": "2024-25-engadin-8210",
+  "season": "2024-25",
+  "series": "WSC",
+  "venue": "ENGADIN (SUI)",
+  "nation": "SUI",
+  "format": "championship",
+  "rounds": [
+   {
+    "round_id": "2024-25-8210-Q2",
+    "codex": "8210",
+    "gender": "W",
+    "round": "Q2",
+    "date": "2025-03-17",
+    "start_time": "12:30",
+    "n_competitors": 2,
+    "pace_time": 23.33,
+    "course": {
+     "name": "Corviglia Moguls",
+     "length_m": 210,
+     "width_m": 18.0,
+     "gate_width_m": 10.0,
+     "gradient_deg": 26
+    },
+    "judges": [
+     {
+      "no": 1,
+      "role": "Turns",
+      "judge_id": "j-rossi-luca",
+      "name": "ROSSI Luca",
+      "noc": "ITA"
+     },
+     {
+      "no": 2,
+      "role": "Turns",
+      "judge_id": "j-brown-emily",
+      "name": "BROWN Emily",
+      "noc": "CAN"
+     },
+     {
+      "no": 3,
+      "role": "Turns",
+      "judge_id": "j-sato-yuki",
+      "name": "SATO Yuki",
+      "noc": "JPN"
+     },
+     {
+      "no": 4,
+      "role": "Turns",
+      "judge_id": "j-weber-karl",
+      "name": "WEBER Karl",
+      "noc": "AUT"
+     },
+     {
+      "no": 5,
+      "role": "Turns",
+      "judge_id": "j-martin-claire",
+      "name": "MARTIN Claire",
+      "noc": "FRA"
+     },
+     {
+      "no": 6,
+      "role": "Air",
+      "judge_id": "j-novak-jan",
+      "name": "NOVAK Jan",
+      "noc": "CZE"
+     },
+     {
+      "no": 7,
+      "role": "Air",
+      "judge_id": "j-larsen-ola",
+      "name": "LARSEN Ola",
+      "noc": "NOR"
+     }
+    ],
+    "officials": [
+     {
+      "role": "Head Judge",
+      "name": "GARCIA Ana",
+      "noc": "ESP"
+     }
+    ],
+    "source": {
+     "pdf": "2024-25シーズン/Engadin/Engadin_女子モーグル予選_8210.pdf",
+     "pdf_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+     "fis_url": null,
+     "report_created": "MON 17 MAR 2025 13:40",
+     "imported_at": "2026-09-03T05:00:00",
+     "parser_version": "0.1.0-sample",
+     "rules_version": "2024-25"
+    },
+    "verification": {
+     "layer0": "ok",
+     "layer1": "ok",
+     "layer2": "ok",
+     "layer3": "ok",
+     "layer4": "ok",
+     "layer5": "ok"
+    }
+   }
+  ],
+  "date_from": "2025-03-17",
+  "date_to": "2025-03-17",
+  "format_label": "選手権形式（WSC・OWG）"
+ }
+]

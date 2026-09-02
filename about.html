@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="モーグルDB">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="robots" content="noindex,nofollow">
+<title>データについて | モーグル リザルトデータベース</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="app">
+  <div class="card">
+    <h2>データについて</h2>
+    <p class="meta">このサイトの数字がどこから来ていて、どう確かめているかをまとめたページです。</p>
+    <div id="status"></div>
+  </div>
+
+  <div class="card">
+    <h2>出典</h2>
+    <p class="meta">
+      FIS（国際スキー・スノーボード連盟）が公開している公式リザルト PDF を、Python の ETL が直接読んで JSON にしています。
+      人手での転記はありません。各ラウンドの見出しから元 PDF（FIS 上の URL、無ければローカルのファイル名）を辿れます。
+    </p>
+    <div id="sources"></div>
+  </div>
+
+  <div class="card">
+    <h2>対象大会</h2>
+    <p class="meta">ワールドカップ（WC）・世界選手権（WSC）・オリンピック（OWG）のモーグル単走。予選（Q1・Q2）・決勝1・決勝2 を収録しています。</p>
+    <div id="events"></div>
+  </div>
+
+  <div class="card">
+    <h2>対象外</h2>
+    <p class="meta">
+      <strong>デュアルモーグルは対象外です</strong>（保持もしていません）。公式 PDF に各選手の進行テキストしか無く、ジャッジ個別票が載っていないためです。
+      コンチネンタルカップ等の下位シリーズも Phase 1 では対象外です（<code>series</code> 区分を持っているので後から追加できます）。
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>欠測の定義</h2>
+    <p class="meta"><strong>推測で埋めていません。</strong>取れなかった値は空欄（—）で表示しています。0 点ではありません。</p>
+    <div class="table-wrap"><table class="mini">
+      <thead><tr><th class="no-sort">表記</th><th class="no-sort">意味</th><th class="no-sort">この表での扱い</th></tr></thead>
+      <tbody>
+        <tr><td>DNS</td><td>不出走</td><td>順位・得点は空欄。ランとして保持</td></tr>
+        <tr><td>DNF</td><td>途中棄権（ゲート不通過・10 秒以上の停止・スキー脱落を含む）</td><td>順位・得点は空欄。印字された部分点があればそのまま保持</td></tr>
+        <tr><td>DSQ</td><td>失格</td><td>順位・得点は空欄</td></tr>
+        <tr><td>RES</td><td>リザーブジャッジが採点したラン（PDF の Tie 欄に印字）</td><td>ステータスではなくフラグ。バッジ「リザーブジャッジ採点」で表示し、得点はそのまま採用</td></tr>
+        <tr><td>取り消し線の数字</td><td>5 名のターン点のうち最高・最低（除外）</td><td>消さずに取り消し線で表示。合計には入っていない。同点のときはどの審判の点を除外扱いにするかの規則は無く（FIS レースディレクターに確認済み）、このサイトでは先の審判に線を引く。公式 PDF の線の位置とは異なることがあるが、得点は同じ</td></tr>
+        <tr><td>Q1参考</td><td>Q2 の PDF に併記される Q1 の走り</td><td>採用された方（Q1/Q2 の高い方）を太字で表示</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+
+  <div class="card">
+    <h2>検証の仕組み</h2>
+    <p class="meta">
+      PDF を 2 つの独立した読み取り（座標ベースと正規表現ベース）で読み、以下の層で照合します。
+      1 ラウンドでも赤があれば、その大会は公開しません（全か無か）。各ラウンドの見出しの「✓ FIS公式結果と照合済み」から層ごとの結果を確認できます。
+    </p>
+    <div id="layers"></div>
+    <p class="meta">
+      再計算の規則（第2層）: タイム点 = 48 − 32 × タイム ÷ ペースタイム（0〜20、小数第2位切り捨て）。
+      エア = ジャッジごとに 点 × DD を切り捨て（上限 10.0）→ J6・J7 を平均 → 2 本を足して切り捨て。
+      ターン = ベース点 5 つの最高・最低を除いた 3 つの合計 ＋ 減点の同様の合計（下限 0.3）。
+      合計 = タイム点 ＋ エア ＋ ターン。
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>データ版・更新日</h2>
+    <div id="version"></div>
+  </div>
+
+  <div class="card">
+    <h2>規則版の一覧</h2>
+    <p class="meta">大会日・大会種別・フォーマットで規則版を選びます。内容が同じでも版として分けています。</p>
+    <div id="rules"></div>
+  </div>
+
+  <div class="card">
+    <h2>誤りの報告先</h2>
+    <p class="meta">
+      値の誤り・抜けに気づいたら、各ラウンドの見出しにある「誤りを報告」から送ってください。
+      round_id とデータ版が自動で入るので、どのデータの話かがすぐ分かります。
+    </p>
+    <div id="report"></div>
+  </div>
+
+  <div class="card">
+    <h2>検索エンジンには載せていません</h2>
+    <p class="meta">
+      <code>robots.txt</code> と各ページの <code>noindex</code> で、検索エンジンのインデックスを止めています。
+      元データ（FIS の PDF）は公開されていますが氏名検索には引っかかりにくいのに対し、このサイトは HTML なので、
+      そのままだと選手名・審判名が検索できる状態になるためです。URL を知っていれば見られる状態は変わりません。
+    </p>
+  </div>
+</main>
+<script type="module" src="js/about.js"></script>
+</body>
+</html>

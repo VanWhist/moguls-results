@@ -1,0 +1,33 @@
+{
+ "dataVersion": "2026-09-03-sample",
+ "builtAt": "2026-09-03T05:30:00",
+ "parserVersion": "0.1.0-sample",
+ "sample": true,
+ "files": {
+  "events": "sample/events.a1b2c3.json",
+  "athletes": "sample/athletes.d4e5f6.json",
+  "runs": {
+   "2024-25": "sample/runs.2024-25.0a1b2c.json"
+  },
+  "lines": "sample/lines.3c4d5e.json",
+  "rules": "sample/rules.6f7a8b.json"
+ },
+ "counts": {
+  "events": 2,
+  "rounds": 3,
+  "runs": 12,
+  "athletes": 7
+ },
+ "verification": {
+  "allGreen": true,
+  "layers": {
+   "layer0": "ok",
+   "layer1": "ok",
+   "layer2": "ok",
+   "layer3": "ok",
+   "layer4": "ok",
+   "layer5": "partial"
+  },
+  "reportPath": "docs/検証レポート.md"
+ }
+}

@@ -1,0 +1,171 @@
+[
+ {
+  "athlete_id": "2484937",
+  "fis_code": "2484937",
+  "name": "KINGSBURY Mikael",
+  "aliases": [
+   "キングスベリー"
+  ],
+  "noc": "CAN",
+  "noc_history": [
+   {
+    "noc": "CAN",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 1992,
+  "n_runs": 2,
+  "best": {
+   "run_score": 83.74,
+   "run_id": "2024-25-8105-F2-2484937"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2529411",
+  "fis_code": "2529411",
+  "name": "HORISHIMA Ikuma",
+  "aliases": [
+   "堀島行真",
+   "ほりしま いくま"
+  ],
+  "noc": "JPN",
+  "noc_history": [
+   {
+    "noc": "JPN",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 1997,
+  "n_runs": 2,
+  "best": {
+   "run_score": 81.38,
+   "run_id": "2024-25-8105-F2-2529411"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2532001",
+  "fis_code": "2532001",
+  "name": "WALLBERG Walter",
+  "aliases": [],
+  "noc": "SWE",
+  "noc_history": [
+   {
+    "noc": "SWE",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 2000,
+  "n_runs": 2,
+  "best": {
+   "run_score": 75.36,
+   "run_id": "2024-25-8105-F2-2532001"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2530045",
+  "fis_code": "2530045",
+  "name": "ELOFSSON Filip",
+  "aliases": [],
+  "noc": "SWE",
+  "noc_history": [
+   {
+    "noc": "SWE",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 1999,
+  "n_runs": 1,
+  "best": {
+   "run_score": 68.36,
+   "run_id": "2024-25-8105-Q1-2530045"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2531234",
+  "fis_code": "2531234",
+  "name": "MATSUDA Sou",
+  "aliases": [
+   "松田颯"
+  ],
+  "noc": "JPN",
+  "noc_history": [
+   {
+    "noc": "JPN",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 2003,
+  "n_runs": 1,
+  "best": null,
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2530270",
+  "fis_code": "2530270",
+  "name": "KAWAMURA Anri",
+  "aliases": [
+   "川村あんり"
+  ],
+  "noc": "JPN",
+  "noc_history": [
+   {
+    "noc": "JPN",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 2004,
+  "n_runs": 2,
+  "best": {
+   "run_score": 79.69,
+   "run_id": "2024-25-8210-Q2-2530270"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ },
+ {
+  "athlete_id": "2485003",
+  "fis_code": "2485003",
+  "name": "LAFFONT Perrine",
+  "aliases": [
+   "ラフォン"
+  ],
+  "noc": "FRA",
+  "noc_history": [
+   {
+    "noc": "FRA",
+    "from": "2024-25",
+    "to": "2024-25"
+   }
+  ],
+  "yb": 1998,
+  "n_runs": 2,
+  "best": {
+   "run_score": 75.99,
+   "run_id": "2024-25-8210-Q2-2485003-Q1ref"
+  },
+  "seasons": [
+   "2024-25"
+  ]
+ }
+]
